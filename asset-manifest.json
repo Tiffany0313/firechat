@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Tiffany0313.github.io/firechat/static/css/main.af0fa26e.chunk.css",
+    "main.js": "/Tiffany0313.github.io/firechat/static/js/main.6be81da7.chunk.js",
+    "main.js.map": "/Tiffany0313.github.io/firechat/static/js/main.6be81da7.chunk.js.map",
+    "runtime-main.js": "/Tiffany0313.github.io/firechat/static/js/runtime-main.5587f2c2.js",
+    "runtime-main.js.map": "/Tiffany0313.github.io/firechat/static/js/runtime-main.5587f2c2.js.map",
+    "static/js/2.496d9570.chunk.js": "/Tiffany0313.github.io/firechat/static/js/2.496d9570.chunk.js",
+    "static/js/2.496d9570.chunk.js.map": "/Tiffany0313.github.io/firechat/static/js/2.496d9570.chunk.js.map",
+    "index.html": "/Tiffany0313.github.io/firechat/index.html",
+    "static/css/main.af0fa26e.chunk.css.map": "/Tiffany0313.github.io/firechat/static/css/main.af0fa26e.chunk.css.map",
+    "static/js/2.496d9570.chunk.js.LICENSE.txt": "/Tiffany0313.github.io/firechat/static/js/2.496d9570.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5587f2c2.js",
+    "static/js/2.496d9570.chunk.js",
+    "static/css/main.af0fa26e.chunk.css",
+    "static/js/main.6be81da7.chunk.js"
+  ]
+}
