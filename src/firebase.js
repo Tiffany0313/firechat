@@ -2,7 +2,7 @@ import firebase from 'firebase'
 
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyBqHWdDg-ijdxQ_d7QOP-fvxvfaCFG5ygU",
-    authDomain: "https://tiffany0313.github.io",
+    authDomain: "https://auth.tiffany0313.github.io/__/auth/handler",
     projectId: "firechat-37187",
     storageBucket: "firechat-37187.appspot.com",
     messagingSenderId: "1029907543038",
