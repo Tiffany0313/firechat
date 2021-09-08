@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import firebase from 'firebase'
 import { auth } from '../firebase'
-// import { Button } from '@material-ui/core'
-import $ from 'jquery';
+import $ from 'jquery'
 import $_ from 'jquery.transit'
 
-const shadow = document.querySelector(".shadow");
-const light = document.querySelector(".bulb");
-const filaments = document.querySelector(".filaments");
-
-const handleBulbClick = () => {
-    light.classList.toggle("off");
-    shadow.classList.toggle("off");
-    filaments.classList.toggle("off");
-}
-
-
-
-
 function SignIn({ user }) {
+
+    const [isActive, setActive] = useState("true")
+
+    const handleBulbClick = () => {
+        setActive(!isActive)
+    }
+
     function signInWithGoogle() {
         const provider = new firebase.auth.GoogleAuthProvider()
         auth.signInWithPopup(provider)
@@ -52,8 +45,8 @@ function SignIn({ user }) {
     return (
         <>
             <div className="container">
-                <div className="bulb" onClick={handleBulbClick}>
-                    <div className="filaments"></div>
+                <div className={`bulb ${isActive ? "" : "off"}`} onClick={handleBulbClick}>
+                    <div className={`filaments ${isActive ? "" : "off"}`}></div>
                 </div>
             </div>
 
@@ -99,7 +92,7 @@ function SignIn({ user }) {
             </div>
 
             <div className="floor" style={{ zIndex: -10 }}>
-                <div className="shadow"></div>
+                <div className={`shadow ${isActive ? "" : "off"}`}></div>
             </div>
 
         </>
