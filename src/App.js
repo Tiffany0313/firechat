@@ -6,10 +6,12 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 
 function App() {
   const [user] = useAuthState(auth)
+
   return (
     <>
-      {user ? <Chat /> : <SignIn />}
 
+
+      {user ? <Chat /> : <SignIn user={user} />}
 
     </>
   );
