@@ -1,5 +1,5 @@
 import { Input, Button } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import firebase from 'firebase'
 import { db, auth } from '../firebase'
 
@@ -19,6 +19,10 @@ function SendMessages({ scroll }) {
         setMsg('') // 清空輸入欄位
         scroll.current.scrollIntoView({ behavior: 'smooth' })
     }
+
+    useEffect(() => {
+        scroll.current.scrollIntoView({ behavior: 'smooth' })
+    }, [sendMessage])
 
     return (
         <div>

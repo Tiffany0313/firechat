@@ -5,7 +5,7 @@ import { Button } from '@material-ui/core'
 function SignOut() {
     return (
         <div>
-            <Button onClick={() => auth.signOut()}>Sign Out</Button>
+            <Button onClick={() => auth.signOut()} style={{ color: '#FFF' }} >Sign Out</Button>
         </div>
     )
 }
