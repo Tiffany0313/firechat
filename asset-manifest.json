@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/firechat/static/css/main.9643e134.chunk.css",
-    "main.js": "/firechat/static/js/main.dc04e959.chunk.js",
-    "main.js.map": "/firechat/static/js/main.dc04e959.chunk.js.map",
+    "main.css": "/firechat/static/css/main.3462dd80.chunk.css",
+    "main.js": "/firechat/static/js/main.7ec46cfc.chunk.js",
+    "main.js.map": "/firechat/static/js/main.7ec46cfc.chunk.js.map",
     "runtime-main.js": "/firechat/static/js/runtime-main.c5f22bc2.js",
     "runtime-main.js.map": "/firechat/static/js/runtime-main.c5f22bc2.js.map",
-    "static/js/2.c974b24c.chunk.js": "/firechat/static/js/2.c974b24c.chunk.js",
-    "static/js/2.c974b24c.chunk.js.map": "/firechat/static/js/2.c974b24c.chunk.js.map",
+    "static/js/2.a3b747a8.chunk.js": "/firechat/static/js/2.a3b747a8.chunk.js",
+    "static/js/2.a3b747a8.chunk.js.map": "/firechat/static/js/2.a3b747a8.chunk.js.map",
     "index.html": "/firechat/index.html",
-    "static/css/main.9643e134.chunk.css.map": "/firechat/static/css/main.9643e134.chunk.css.map",
-    "static/js/2.c974b24c.chunk.js.LICENSE.txt": "/firechat/static/js/2.c974b24c.chunk.js.LICENSE.txt"
+    "static/css/main.3462dd80.chunk.css.map": "/firechat/static/css/main.3462dd80.chunk.css.map",
+    "static/js/2.a3b747a8.chunk.js.LICENSE.txt": "/firechat/static/js/2.a3b747a8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c5f22bc2.js",
-    "static/js/2.c974b24c.chunk.js",
-    "static/css/main.9643e134.chunk.css",
-    "static/js/main.dc04e959.chunk.js"
+    "static/js/2.a3b747a8.chunk.js",
+    "static/css/main.3462dd80.chunk.css",
+    "static/js/main.7ec46cfc.chunk.js"
   ]
 }
