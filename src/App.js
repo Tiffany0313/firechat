@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useMemo } from 'react'
+import React from 'react'
 import SignIn from './components/SignIn';
 import Chat from './components/Chat';
 import { auth } from './firebase'
@@ -10,11 +10,9 @@ function App() {
 
   return (
     <>
-
-
-      {user ? <Chat /> : <SignIn user={user} />}
-
+      {user ? <Chat user={user} /> : <SignIn user={user} />}
     </>
+
   );
 }
 
