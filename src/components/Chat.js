@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { auth, db } from '../firebase'
 import SendMessages from './SendMessages'
 // import SignOut from './SignOut'
 import NavBar from './NavBar'
 
-function Chat({ user }) {
+function Chat() {
     const [messages, setMessages] = useState([])
     const scroll = useRef()
 
