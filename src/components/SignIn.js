@@ -5,6 +5,7 @@ import $ from 'jquery'
 import $_ from 'jquery.transit'
 import GitHubLogin from './GitHubLogin'
 import GoogleLogin from './GoogleLogin'
+import LineLogin from './LineLogin'
 
 function SignIn({ user }) {
 
@@ -72,13 +73,17 @@ function SignIn({ user }) {
                                     <span className="register">Need an account?<a href="">Register</a></span>
                                 </div>
 
-                                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-evenly", alignContent: "center" }}>
                                     <div className="formDiv" style={{ transitionDelay: '0.8s', paddingTop: 0 }}>
                                         <GoogleLogin />
                                     </div>
 
                                     <div className="formDiv" style={{ transitionDelay: '0.8s', paddingTop: 0 }}>
                                         <GitHubLogin />
+                                    </div>
+
+                                    <div className="formDiv" style={{ transitionDelay: '0.8s', paddingTop: 0 }}>
+                                        <LineLogin />
                                     </div>
                                 </div>
 

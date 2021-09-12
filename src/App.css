@@ -447,21 +447,21 @@ form h1.loadIn {
   box-shadow: inset 0 -2px 0 #fff;
 }
 
-/* Google Button */
+/* Login Button */
 
-#login-google-button {
+#login-button {
 	display: block;
 	margin-bottom: 35px;
   border: none;
-  border-radius: 25px;
+  border-radius: 15px;
 	color: #777278;
 	font-size: 16px;
 	background-color: #fff;
-	height: 50px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  padding: 12px;
   outline: none;
 	transition: border 0.3s ease-out;
   cursor: pointer;
@@ -472,17 +472,16 @@ form h1.loadIn {
           user-select: none;
 }
 
-#login-google-button:hover {
+#login-button:hover {
 	border: none;
   background: #F0F0F0;
 }
 
-#login-google-button:disabled:hover {
+#login-button:disabled:hover {
 	border: 2px solid #eee;
 }
 
-#login-google-button svg {
-	margin-right: 5px;
+#login-button svg {
 	width: 20px;
 	height: 20px;
 }
