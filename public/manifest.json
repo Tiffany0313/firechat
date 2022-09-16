@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "線上簡易聊天室",
+  "name": "線上簡易聊天室",
   "icons": [
     {
       "src": "favicon.ico",

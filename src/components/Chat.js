@@ -19,7 +19,7 @@ function Chat() {
     return (
         <div>
             <NavBar />
-            {/* <SignOut /> */}
+
             <div className="msgs">
                 {messages.map(({ id, text, photoURL, uid }) => (
                     <div>

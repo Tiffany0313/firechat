@@ -5,7 +5,7 @@ import $ from 'jquery'
 import $_ from 'jquery.transit'
 import GitHubLogin from './GitHubLogin'
 import GoogleLogin from './GoogleLogin'
-import LineLogin from './LineLogin'
+import Login from './Line/Login'
 
 function SignIn({ user }) {
 
@@ -18,25 +18,15 @@ function SignIn({ user }) {
     useEffect(() => {
         // JQUERY
         $(function () {
-
             setTimeout(function () {
-                $_('.logoContainer').transition({ scale: 1 }, 700, 'ease');
+                $_('.acceptContainer').transition({ height: '431.5px' });
                 setTimeout(function () {
-                    $('.logoContainer .logo').addClass('loadIn');
+                    $('.acceptContainer').addClass('loadIn');
                     setTimeout(function () {
-                        $('.logoContainer .text').addClass('loadIn');
-                        setTimeout(function () {
-                            $_('.acceptContainer').transition({ height: '431.5px' });
-                            setTimeout(function () {
-                                $('.acceptContainer').addClass('loadIn');
-                                setTimeout(function () {
-                                    $('.formDiv, form h1').addClass('loadIn');
-                                }, 500)
-                            }, 500)
-                        }, 500)
-                    }, 500)
-                }, 1000)
-            }, 10)
+                        $('.formDiv, form h1').addClass('loadIn');
+                    }, 300)
+                }, 300)
+            }, 200)
         });
     }, [user])
 
@@ -50,27 +40,22 @@ function SignIn({ user }) {
 
             <div id="formContainer">
                 <div id="inviteContainer">
-                    <div className="logoContainer">
-                        <img className="logo" alt="" src="https://seeklogo.com/images/D/discord-logo-134E148657-seeklogo.com.png" />
-                    </div>
-
-
                     <div className="acceptContainer">
                         <form>
-                            <h1>WELCOME BACK!</h1>
+                            <h1>線上簡易聊天室</h1>
                             <div className="formContainer">
                                 <div className="formDiv" style={{ transitionDelay: '0.2s' }}>
-                                    <p>EMAIL</p>
+                                    <p>帳號</p>
                                     <input type="email" required="" />
                                 </div>
                                 <div className="formDiv" style={{ transitionDelay: '0.4s' }}>
-                                    <p>PASSWSORD</p>
+                                    <p>密碼</p>
                                     <input type="password" required="" />
-                                    <a className="forgotPas" href="">FORGOT YOUR PASSWORD?</a>
+                                    <a className="forgotPas" href="">忘記密碼？</a>
                                 </div>
                                 <div className="formDiv" style={{ transitionDelay: '0.6s' }}>
-                                    <button className="acceptBtn" type="submit">Login</button>
-                                    <span className="register">Need an account?<a href="">Register</a></span>
+                                    <button className="acceptBtn" type="submit">登入</button>
+                                    <span className="register"><a href="">我要註冊</a></span>
                                 </div>
 
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-evenly", alignContent: "center" }}>
@@ -82,16 +67,17 @@ function SignIn({ user }) {
                                         <GitHubLogin />
                                     </div>
 
-                                    <div className="formDiv" style={{ transitionDelay: '0.8s', paddingTop: 0 }}>
-                                        <LineLogin />
-                                    </div>
+                                    {/* <div className="formDiv" style={{ transitionDelay: '0.8s', paddingTop: 0 }}>
+                                        <Login />
+                                    </div> */}
                                 </div>
 
                             </div>
                         </form>
                     </div>
+
                 </div>
-            </div >
+            </div>
 
             <div className="floor" style={{ zIndex: -10 }}>
                 <div className={`shadow ${isActive ? "" : "off"}`}></div>
